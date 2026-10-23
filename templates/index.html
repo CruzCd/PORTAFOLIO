@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruz Cd | Desarrollador Full-Stack</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1>Cruz Cd</h1>
+            <p>Desarrollador Full-Stack (Python & JavaScript)</p>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL (Grid) -->
+    <div class="layout-grid container">
+        
+        <!-- SECCIONES (Izquierda) -->
+        <main>
+            <section id="sobre-mi">
+                <h2>Sobre mí</h2>
+                <p>Soy un desarrollador apasionado por resolver problemas reales a través del código. Me especializo en el desarrollo backend con Python (Flask, Pandas) y la creación de interfaces frontend con HTML, CSS y JavaScript.</p>
+                <p>He desplegado soluciones completas en la nube, automatizando procesos que ahorran horas de trabajo manual a los negocios.</p>
+            </section>
+
+            <section id="proyectos">
+                <h2>Proyectos Destacados</h2>
+                
+                <div class="project-card">
+                    <h3>AutoReporte</h3>
+                    <p class="tech">Python | Flask | Pandas | JavaScript</p>
+                    <p>Aplicación web que automatiza la limpieza de Excel y genera reportes profesionales con gráficos en segundos.</p>
+                    <div class="project-links">
+                        <a href="https://autoreporte-5.onrender.com" target="_blank" class="btn">Ver Demo</a>
+                        <a href="https://github.com/CruzCd/autoreporte-" target="_blank" class="btn outline">Ver Código</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ASIDE (Barra Lateral Derecha) -->
+        <aside>
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li>Python (Flask, Pandas)</li>
+                <li>JavaScript, HTML5, CSS3</li>
+                <li>Bases de Datos (SQLite, SQL)</li>
+                <li>Git y GitHub</li>
+                <li>Despliegue en la Nube (Render)</li>
+            </ul>
+
+            <h2 class="mt-4">Contacto</h2>
+            <ul>
+                <li><a href="mailto:carlosduvergel0@nauta.com.cu">📧 Mi Correo</a></li>
+                <li><a href="https://github.com/CruzCd" target="_blank">💻 GitHub</a></li>
+            </ul>
+            
+            <a href="/descargar-cv" class="btn descargar-cv">Descargar CV</a>
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Cruz Cd. Construido con Python y Flask.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
